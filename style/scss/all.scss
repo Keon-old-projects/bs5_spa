@@ -1,0 +1,9 @@
+//字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); 
+// bs5
+@import "../../node_modules/bootstrap/scss/bootstrap"; 
+//自訂
+@import "mixin";//自訂套件
+// @import "bootstrap-grid";//格線系統
+
+@import "main";//內容
