@@ -1,9 +1,14 @@
 //字體
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); 
+
+@import "./variable";//自訂變數，必須在導入 Bootstrap 的 SCSS 主文件之前，否則無法成功
+
 // bs5
 @import "../../node_modules/bootstrap/scss/bootstrap"; 
+
+
 //自訂
-@import "mixin";//自訂套件
-// @import "bootstrap-grid";//格線系統
+@import "./main";//自訂套件
+
 
 @import "main";//內容
