@@ -1,14 +1,36 @@
 //字體
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); 
 
-@import "./variable";//自訂變數，必須在導入 Bootstrap 的 SCSS 主文件之前，否則無法成功
 
-// bs5
-@import "../../node_modules/bootstrap/scss/bootstrap"; 
 
+// Bootstrap5 必要樣式表
+@import "../../node_modules/bootstrap/scss/functions";// bs5函式
+
+@import "../../node_modules/bootstrap/scss/variables"; // 存放bs5變數資料
+@import "./variables";//自訂變數，必須在導入 Bootstrap 的 SCSS 主文件之前，否則無法成功
+
+@import "../../node_modules/bootstrap/scss/mixins";// bs5樣式表
+
+//css reset 
+@import "../../node_modules/bootstrap/scss/reboot";
+
+//主要生成bs5 變數樣式入口。
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/root";
+
+
+// 自選Bootstrap 組件
+@import "../../node_modules/bootstrap/scss/containers";//bs5 容器
+@import "../../node_modules/bootstrap/scss/grid";//bs5 格線系統
+@import "../../node_modules/bootstrap/scss/utilities"; //bs5 通用類別參數資料
+
+
+
+// 樣式表生成與執行入口
+@import "../../node_modules/bootstrap/scss/utilities/api";//bs5 通用類別主要執行入口。
 
 //自訂
-@import "./main";//自訂套件
+@import "./mixin";//自訂套件
 
 
-@import "main";//內容
+@import "main";//自訂內容

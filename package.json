@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "jquery": "^3.6.3"
   },
   "name": "bootstrap_project",
@@ -11,5 +10,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }
