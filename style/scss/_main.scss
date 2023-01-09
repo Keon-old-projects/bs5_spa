@@ -1,12 +1,127 @@
 // base 網頁基本設定(html tag標籤)-------------------------------
-
-body{
-    font-size: $font-size-base;
+* {
+    font-family: 'Noto Sans TC', Microsoft YaHei, Arial, '宋體', Tahoma, Helvetica, sans-serif;
 }
 
-// layout 網頁上共通區塊--------------------------
-// 導覽列
-.l-nav{
-    padding: 0;
+body {
+    font-size: $font-size-base;
+}
+p{
     margin: 0;
+}
+
+// 文字
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: .75rem;
+}
+
+.z {
+    &-0 {
+        z-index: 0;
+    }
+
+    &-1 {
+        z-index: 1;
+    }
+
+    &-2 {
+        z-index: 2;
+    }
+}
+
+// layout，網頁上共通區塊--------------------------
+.l-h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    span {
+        @include media-breakpoint-up(md) {
+            background: $white;
+            z-index: 2;
+            padding: 0 1rem;
+        }
+    }
+
+    &::after,
+    &::before {
+        content: "";
+
+        @include media-breakpoint-up(md) {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 2px;
+            border-bottom: 2px solid $dark;
+            z-index: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            border-bottom: 1px solid $dark;
+            z-index: 0;
+        }
+    }
+
+    &::before {
+        @include media-breakpoint-up(md) {
+            left: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            top: -0.5rem;
+        }
+    }
+
+    &::after {
+        @include media-breakpoint-up(md) {
+            right: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            bottom: -0.5rem;
+        }
+    }
+
+}
+
+
+//Components，自訂元件----------------------------------
+.btn {
+    &:hover {
+        svg {
+            background-color: $dark;
+        }
+    }
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+
 }

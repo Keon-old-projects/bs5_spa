@@ -1,19 +1,263 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>一日營業店員</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/css/all.css">
 </head>
+
 <body>
-    <header>
-        <h1 class="text-primary">123</h1>
+    <!-- 頂層 -->
+    <header class="navbar navbar-expand-lg navbar-light bg-primary">
+
+        <nav class="container-fluid align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h2 class="d-flex align-items-center m-0 px-2"><a class="navbar-brand m-0" href="#">LOGO</a></h2>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">選單1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">選單2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">選單3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">選單4</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <div class="form-control d-flex">
+                        <button class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                        <input class="border-0 me-2" type="search" placeholder="Search" aria-label="Search">
+
+                    </div>
+                    <div class="btn-group d-none d-sm-flex">
+                        <button class="btn border-0 bg-transparent" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                            </svg>
+                        </button>
+                        <button class="btn border-0 bg-transparent" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                            </svg>
+                        </button>
+                        <button class="btn border-0 bg-transparent" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-share" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
     </header>
+
+
+    <!-- 頁面1：滿版照片 -->
+    <section class="position-relative vh-100 d-flex flex-column justify-content-center bg-img">
+        <!-- 主業排版 -->
+        <main class="container z-1 text-light">
+            <h1 class="text-center ">一日營業店員</h1>
+            <p class="mt-2">
+                承受超市，保留滑鼠任意認為新聞基金，背景中文版本科當我用途好像言論面向章節，不需要歐洲條件你自己歡迎光臨郵遞區號，總部規律其他新年數碼贏得投票推坑大魔王號碼表現，風情原來出處眾人無線，國外高興財富容易感染化學，構成編號認定，這個問題競爭力威脅，玩家職業連。
+            </p>
+            <div class="w-100 mx-auto mt-4 text-center">
+                <button class="btn btn-primary">服務產品</button>
+            </div>
+        </main>
+
+
+        <!-- 遮罩 -->
+        <div class="z-0 position-absolute h-100 w-100 bg-dark opacity-50"></div>
+    </section>
+
+
+    <!-- 頁面：品牌特色 -->
+    <section class="container py-3">
+        <h2 class="l-h2 mt-5 text-center"><span>品牌特色</span></h2>
+        <div class="mt-5">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 m-auto p-0 text-center">
+                    <figure class="figure w-100">
+                        <img src="https://picsum.photos/400/300/?random=1" class="figure-img img-fluid rounded">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="d-flex justify-content-center align-items-center h-100 px-4">
+                        祝福剛剛沒人，區域那天理解試試見到曾經能不能，四周運作不想聯想展示緊緊之類全面，不用夢想身體都說都市國語國語，安徽主營研究生本科民眾，全身設立參數追求互動每年，比賽需要請大家直到大家都支撐這些，公開軟體平均可以不起相對廠商新人標準，蒐集成就學校，不太我的。
+                        <br><br>
+                        一系列大幅營銷收藏本頁經過聯想鈴聲熱情為主雙手遭遇，道德再次等級案件老婆招生我現在小組給我們哪裡求購網通哈哈，造成奧客促銷黃金章節小七詢問好像法律舉行，建材收集的是，發行網際金錢，每一個大哥以下至少嚴格下列房間楠雅思考篇文章目光直播主億元，互相證據教育一。
+                    </p>
+                </div>
+            </div>
+            <div class="row flex-row-reverse py-3">
+                <div class="col-12 col-md-4 m-auto p-0 text-center">
+                    <figure class="figure w-100">
+                        <img src="https://picsum.photos/400/300/?random=2" class="figure-img img-fluid rounded">
+                    </figure>
+                </div>
+                <div class="col col-md-8">
+                    <p class="d-flex justify-content-center align-items-center h-100 px-4">
+                        祝福剛剛沒人，區域那天理解試試見到曾經能不能，四周運作不想聯想展示緊緊之類全面，不用夢想身體都說都市國語國語，安徽主營研究生本科民眾，全身設立參數追求互動每年，比賽需要請大家直到大家都支撐這些，公開軟體平均可以不起相對廠商新人標準，蒐集成就學校，不太我的。
+                        <br><br>
+                        一系列大幅營銷收藏本頁經過聯想鈴聲熱情為主雙手遭遇，道德再次等級案件老婆招生我現在小組給我們哪裡求購網通哈哈，造成奧客促銷黃金章節小七詢問好像法律舉行，建材收集的是，發行網際金錢，每一個大哥以下至少嚴格下列房間楠雅思考篇文章目光直播主億元，互相證據教育一。
+                    </p>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-12 col-md-4 m-auto p-0 text-center">
+                    <figure class="figure w-100">
+                        <img src="https://picsum.photos/400/300/?random=3" class="figure-img img-fluid rounded">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="d-flex justify-content-center align-items-center h-100 px-4">
+                        祝福剛剛沒人，區域那天理解試試見到曾經能不能，四周運作不想聯想展示緊緊之類全面，不用夢想身體都說都市國語國語，安徽主營研究生本科民眾，全身設立參數追求互動每年，比賽需要請大家直到大家都支撐這些，公開軟體平均可以不起相對廠商新人標準，蒐集成就學校，不太我的。
+                        <br><br>
+                        一系列大幅營銷收藏本頁經過聯想鈴聲熱情為主雙手遭遇，道德再次等級案件老婆招生我現在小組給我們哪裡求購網通哈哈，造成奧客促銷黃金章節小七詢問好像法律舉行，建材收集的是，發行網際金錢，每一個大哥以下至少嚴格下列房間楠雅思考篇文章目光直播主億元，互相證據教育一。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 頁面：現時折價 -->
+    <section class="container">
+        <h2 class="l-h2 mt-5 text-center"><span>現時折價中</span></h2>
+        <main class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+            <!-- card -->
+            <div class="col">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/300/200/?random=4">
+                    <div class="d-flex align-items-center">
+                        <div class="card-body">
+                            <h4 class="card-title">商品名稱</h4>
+                            <p class="card-text">
+                                <span>NT$1000</span>
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-primary mx-1" href="#" role="button">加入追蹤</button>
+                            <button class="btn btn-primary mx-1" href="#" role="button">立即購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="col">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/300/200/?random=5">
+                    <div class="d-flex align-items-center">
+                        <div class="card-body">
+                            <h4 class="card-title">商品名稱</h4>
+                            <p class="card-text">
+                                <span>NT$1000</span>
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-primary mx-1" href="#" role="button">加入追蹤</button>
+                            <button class="btn btn-primary mx-1" href="#" role="button">立即購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="col">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/300/200/?random=6">
+                    <div class="d-flex align-items-center">
+                        <div class="card-body">
+                            <h4 class="card-title">商品名稱</h4>
+                            <p class="card-text">
+                                <span>NT$1000</span>
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-primary mx-1" href="#" role="button">加入追蹤</button>
+                            <button class="btn btn-primary mx-1" href="#" role="button">立即購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="col">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/300/200/?random=7">
+                    <div class="d-flex align-items-center">
+                        <div class="card-body">
+                            <h4 class="card-title">商品名稱</h4>
+                            <p class="card-text">
+                                <span>NT$1000</span>
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-primary mx-1" href="#" role="button">加入追蹤</button>
+                            <button class="btn btn-primary mx-1" href="#" role="button">立即購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+    <!-- 頁面4 -->
+    <section>
+
+    </section>
+
+
+    <!-- 頁面5 -->
+    <section>
+
+    </section>
+
+
+    <!-- 頁面6 -->
+    <section>
+
+    </section>
+
+
+
+    <!-- 底部 -->
+    <footer>
+
+    </footer>
+
 
     <!-- JavaScript Bundle with Popper -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </body>
+
 </html>
