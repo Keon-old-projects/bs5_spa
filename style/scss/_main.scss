@@ -7,11 +7,12 @@ body {
     font-size: $font-size-base;
 }
 
-section{
+section {
     padding-top: 1rem;
     margin-top: 1rem;
 }
-p{
+
+p {
     margin: 0;
 }
 
@@ -129,25 +130,29 @@ h6 {
     background-position: center;
     background-image: url("https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
 }
-.figure{
-    .card-img-overlay{
+
+.figure {
+    .card-img-overlay {
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         text-shadow: 0 0 32px rgb(255 255 255);
         display: flex;
         align-items: center;
         justify-content: center;
-        span{
+
+        span {
             display: block;
             background-color: rgba($dark, .75);
             text-align: center;
 
         }
     }
-    &:hover{
+
+    &:hover {
         position: relative;
-        .hover-dark{
+
+        .hover-dark {
             display: block;
             position: absolute;
             width: 100%;
@@ -156,5 +161,15 @@ h6 {
             left: 0;
             background-color: rgba($dark, .25);
         }
+    }
+}
+
+//swiper
+
+.slick-slider{
+    .card{
+        width:33%;
+        height: 100%;
+        margin: 0 1rem;
     }
 }
