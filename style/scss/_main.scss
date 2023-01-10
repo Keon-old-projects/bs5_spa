@@ -173,3 +173,16 @@ h6 {
         margin: 0 1rem;
     }
 }
+
+.fa-hover:hover{
+
+    color: red !important;
+}
+
+.safe-text{
+    @include font-size($blockquote-footer-font-size);
+    margin: 0 ;
+    padding-top: 0.25rem;
+    color: $gray-400;
+    font-style: italic;
+}

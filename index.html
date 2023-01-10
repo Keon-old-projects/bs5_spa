@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一日營業店員</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/css/all.css">
 </head>
 
@@ -38,36 +39,20 @@
                 <form class="d-flex">
                     <div class="form-control d-flex align-content-center px-2 py-1">
                         <button class="btn p-0 px-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                         <input class="border-0 me-2" type="search" placeholder="Search" aria-label="Search">
 
                     </div>
                     <div class="btn-group d-none d-sm-flex">
                         <button class="btn btn-hover border-0 bg-transparent" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-heart" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                            </svg>
+                            <i class="fa-regular fa-heart" width="20" height="20" ></i>
                         </button>
                         <button class="btn btn-hover border-0 bg-transparent" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-person" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                            </svg>
+                            <i class="fa-solid fa-user"></i>
                         </button>
                         <button class="btn btn-hover border-0 bg-transparent" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-share" viewBox="0 0 16 16">
-                                <path
-                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                            </svg>
+                            <i class="fa-solid fa-share-nodes"></i>
                         </button>
                     </div>
                 </form>
@@ -293,7 +278,7 @@
             <a class="btn btn-secondary btn-outline-secondary-variant btn-sm rounded-pill px-4 mx-2" href="#"
                 role="button">新品免費試用</a>
         </div>
-        <main class="slick-slider">
+        <main class="slick-slider mt-4">
 
             <div class="card">
                 <img src="https://picsum.photos/300/200/?random=12" class="card-img-top" alt="...">
@@ -351,15 +336,71 @@
 
 
     <!-- 頁面：首次註冊 -->
-    <section class="">
-
+    <section class="bg-gray">
+        <div class="container-fluid">
+            <!-- 主業排版 -->
+            <main class="row row-cols-2 row-cols-md-4">
+                <!-- 分期付款 -->
+                <div class="col py-3">
+                    <div class="d-flex text-secondary">
+                        <div><i class="fa-solid fa-credit-card fa-4x"></i></div>
+                        <div class="safe-body ps-3 pe-1">
+                            <h5 class="card-title">分期付款</h5>
+                            <p class="safe-text">信用卡3期0利率<br>支援多種支付方式</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分期付款 -->
+                <div class="col py-3">
+                    <div class="d-flex text-secondary">
+                        <div><i class="fa-solid fa-credit-card fa-4x"></i></div>
+                        <div class="safe-body ps-3 pe-1">
+                            <h5 class="card-title">產品保障</h5>
+                            <p class="safe-text">祝你全家賺大錢<br>馬路三寶人壽</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分期付款 -->
+                <div class="col py-3">
+                    <div class="d-flex text-secondary">
+                        <div><i class="fa-solid fa-credit-card fa-4x"></i></div>
+                        <div class="card-body ps-3 pe-1">
+                            <h5 class="card-title">猶豫期</h5>
+                            <p class="safe-text">收到商品後7分鐘內<br>未開封可退換貨</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分期付款 -->
+                <div class="col py-3">
+                    <div class="d-flex text-secondary">
+                        <div><i class="fa-solid fa-credit-card fa-4x"></i></div>
+                        <div class="safe-body ps-3 pe-1">
+                            <h5 class="card-title">以換代修</h5>
+                            <p class="safe-text">部分產品性能故障直接換新</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </section>
 
 
 
     <!-- 底部 -->
-    <footer>
-
+    <footer class="bg-dark text-light">
+        <div class="container-fluid">
+            <!-- 營業時間 -->
+            <div class="d-flex">
+                <h1>LOGO</h1>
+                <ul class="d-flex">
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">安心購物</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">門市據點</a></li>
+                </ul>
+            </div>
+            <!-- 線上克服 -->
+        </div>
     </footer>
 
 

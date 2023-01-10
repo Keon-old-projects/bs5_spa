@@ -4,6 +4,7 @@ $primary: #3f8089; //主要顏色
 $primary-variant: #02535c; //主要顏色變體
 $secondary: #ffa661; //次要顏色
 $secondary-variant: #c87734; //次要顏色變體
+$gray-600: #6c757d;
 // $link-color: purple; //連結顏色
 // $link-hover-color: darken($link-color, 20%); //連結hover
 // $success: green; // 表示成功或積極
@@ -12,17 +13,18 @@ $secondary-variant: #c87734; //次要顏色變體
 // $danger: #dc3545; //表示危險或潛在的負面操作
 // $error: #dc3545; //與$danger一樣
 // $light: #f8f9fa; //亮色
-// $dark: #212529; //暗色
+$dark: #212529; //暗色
 
 $theme-colors: (
 "primary": $primary,
 "primary-variant": $primary-variant,
 "secondary": $secondary,
 "secondary-variant": $secondary-variant,
+"gray": $gray-600,
 // "success": $success,
 // "info": $info,
 // "warning": $warning,
 // "danger": $danger,
 // "light": $light,
-// "dark": $dark,
+"dark": $dark,
 )
