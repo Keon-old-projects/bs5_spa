@@ -7,12 +7,12 @@ $secondary-variant: #c87734; //次要顏色變體
 $gray-600: #6c757d;
 // $link-color: purple; //連結顏色
 // $link-hover-color: darken($link-color, 20%); //連結hover
-// $success: green; // 表示成功或積極
-// $info: #0dcaf0; // 代表了一些信息更改或操作
-// $warning: #ffc107; //表示可能需要注意的警告
-// $danger: #dc3545; //表示危險或潛在的負面操作
+$success: green; // 表示成功或積極
+$info: #0dcaf0; // 代表了一些信息更改或操作
+$warning: #ffc107; //表示可能需要注意的警告
+$danger: #dc3545; //表示危險或潛在的負面操作
 // $error: #dc3545; //與$danger一樣
-// $light: #f8f9fa; //亮色
+$light: #f8f9fa; //亮色
 $dark: #212529; //暗色
 
 $theme-colors: (
@@ -21,10 +21,10 @@ $theme-colors: (
 "secondary": $secondary,
 "secondary-variant": $secondary-variant,
 "gray": $gray-600,
-// "success": $success,
-// "info": $info,
-// "warning": $warning,
-// "danger": $danger,
-// "light": $light,
+"success": $success,
+"info": $info,
+"warning": $warning,
+"danger": $danger,
+"light": $light,
 "dark": $dark,
 )
