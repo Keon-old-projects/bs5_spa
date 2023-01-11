@@ -12,7 +12,7 @@ $gray-600: #6c757d;
 // $warning: #ffc107; //表示可能需要注意的警告
 // $danger: #dc3545; //表示危險或潛在的負面操作
 // $error: #dc3545; //與$danger一樣
-// $light: #f8f9fa; //亮色
+$light: #f8f9fa; //亮色
 $dark: #212529; //暗色
 
 $theme-colors: (
@@ -25,6 +25,6 @@ $theme-colors: (
 // "info": $info,
 // "warning": $warning,
 // "danger": $danger,
-// "light": $light,
+"light": $light,
 "dark": $dark,
 )
