@@ -11557,6 +11557,12 @@ h6, .h6 {
   background-image: url("https://picsum.photos/500/800/?random=11");
 }
 
+.logo {
+  background-color: #f8f9fa;
+  mask: url("image/logo.svg") no-repeat center;
+  -webkit-mask: url("image/logo.svg") no-repeat center;
+}
+
 .card.bg-img {
   transition: all 0.25s;
 }
